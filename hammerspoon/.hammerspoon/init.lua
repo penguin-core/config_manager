@@ -31,7 +31,7 @@ hs.hotkey.bind(appMod, "Right", function()
 	hs.application.launchOrFocus("Preview")
 end)
 
-hs.hotkey.bind(appMod, "n", function()
+hs.hotkey.bind(appMod, "k", function()
 	local app = hs.application.get("Stickies")
 
 	if app then
@@ -39,6 +39,10 @@ hs.hotkey.bind(appMod, "n", function()
 	else
 		hs.application.launchOrFocus("Stickies")
 	end
+end)
+
+hs.hotkey.bind(appMod, "n", function()
+	hs.application.launchOrFocus("Notes")
 end)
 
 hs.hotkey.bind(appMod, "c", function()
